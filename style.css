@@ -228,9 +228,11 @@ img {
 
 .contact {
   background-color: #121212;
-  color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+.contact ttl {
+  color: #fff;
 }
 
 .contact-flex {
@@ -240,6 +242,7 @@ img {
 }
 .contact-flex .contact-left {
   width: 40%;
+  color: #fff;
 }
 
 .contact-left .contact-left-ttl {
@@ -273,12 +276,14 @@ input[type=email] {
 .label-ttl {
   text-transform: capitalize;
   font-weight: normal;
+  color: #fff;
 }
 
 .submit-btn {
   outline: 1px solid #fff;
   padding: 12px 80px;
   text-transform: uppercase;
+  color: #fff;
 }
 .submit-btn:hover {
   background-color: #fff;

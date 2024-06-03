@@ -56,4 +56,4 @@ gsap.to(img, {
   y: 0,
   opacity: 1,
 })
-})
+});

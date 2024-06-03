@@ -262,9 +262,11 @@ img {
 // contact
 .contact {
   background-color: $fontColor;
-  color: #fff;
   padding-top: 50px;
   padding-bottom: 50px;
+  ttl{
+    color: #fff;
+  }
 }
 
 // left
@@ -275,6 +277,7 @@ img {
 
   .contact-left {
     width: 40%;
+    color: #fff;
   }
 }
 
@@ -313,12 +316,14 @@ input[type="email"] {
 .label-ttl {
   text-transform: capitalize;
   font-weight: normal;
+  color: #fff;
 }
 
 .submit-btn {
   outline: 1px solid #fff;
   padding: 12px 80px;
   text-transform: uppercase;
+  color: #fff;
 
   &:hover {
     background-color: #fff;
