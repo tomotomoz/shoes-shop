@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  // font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.04rem;
   font-size: 0.9rem;
@@ -335,8 +335,6 @@ input[type="email"] {
   text-align: center;
 }
 
-
-
 @media screen and (max-width: 600px) {
   .feature .feature-container {
     grid-template-columns: auto;
@@ -361,3 +359,31 @@ input[type="email"] {
     width: 100%;
   }
 }
+
+
+// 変数で色を管理するなど、保守性を意識したコーディングができています🙆‍♂️
+// さらにステップアップとして、メディアクエリもmixinやmap-getを使うと、とても管理しやすくなりますよ👍
+
+// // マップを設定
+// $breakPoint: (
+//   sp: 'screen and (max-width: 600px)',
+//   tab: 'screen and (max-width: 767px)'
+// );
+
+// // mixinを定義
+// @mixin mediaQuery($bp) {
+//   @media #{map-get($breakPoint, $bp)} { // マップとキーを取得
+//     @content;
+//   }
+// }
+
+// .feature-container {
+
+//   // PCサイズのスタイル
+
+//   // mixinの呼び出し
+//   @include mediaQuery(sp){
+//     grid-template-columns: auto;
+//     column-gap: 0;
+//   }
+// }
