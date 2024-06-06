@@ -57,3 +57,13 @@ gsap.to(img, {
   opacity: 1,
 })
 });
+
+
+// submit button
+const submitBtn = document.querySelector('.submit-btn')
+submitBtn.addEventListener('click', function(){
+this.innerHTML = '送信しました!';
+this.style.color = 'black'
+this.style.backgroundColor = 'white'
+this.setAttribute('disabled', true);
+});
