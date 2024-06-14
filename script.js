@@ -1,5 +1,6 @@
 'use strict'
 
+// hamburger
 const hamburgerBtn = document.getElementById('hamburger');
 const nav = document.querySelector('.nav-wrapper');
 
@@ -13,7 +14,7 @@ items.forEach((item) => {
   item.addEventListener('click', function(){
     nav.classList.remove('active');
   })
-})
+});
 
 
 // slider
@@ -35,7 +36,6 @@ $(function(){
         slidesToShow: 1,
       }
     }
-
     ]
   });
 });
