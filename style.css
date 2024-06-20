@@ -61,6 +61,7 @@ img {
   width: 30px;
   height: 20px;
   z-index: 50;
+  cursor: pointer;
 }
 .hamburger span {
   position: absolute;
