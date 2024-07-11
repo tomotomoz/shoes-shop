@@ -7,7 +7,6 @@ $breakPoint: (
 
 @mixin mediaQuery($bp) {
   @media #{map-get($breakPoint, $bp)} {
-    // マップとキーを取得
     @content;
   }
 }
@@ -176,29 +175,21 @@ img {
   left: 0;
   z-index: 20;
   width: 100%;
-  height: 100vh;
+  height:100vh;
   background-color: $fontColor;
   transition: all 0.5s;
   opacity: 0.8;
 }
 
 // main video
-.video-area {
-  position: relative;
-  z-index: -1;
-  width: 100%;
-  height: 100vh;
-}
 
 #video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
-  min-height: 700px;
+  max-height: 960px;
   object-fit: cover;
-  overflow: hidden;
+  @include mediaQuery(tab){
+    height: 100vh;
+  }
 }
 
 // .pick-up slider
