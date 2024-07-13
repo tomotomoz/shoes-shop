@@ -27,9 +27,12 @@ img {
 }
 
 .pick-up,
-.feature,
-.video-area {
+.feature {
   margin-bottom: 160px;
+}
+
+.video-area {
+  margin-bottom: 96px;
 }
 
 .ttl {
